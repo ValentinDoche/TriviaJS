@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+:root{
+    --background-color : #6C9EB4;
+    --primary-color : #FFF;
+    --secondary-color : #EFB261;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fugaz One', cursive;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-evenly;
+}
+.container{
+    width: 60vw;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s6{
+    width: 50%;
+}
+.s12{
+    width: 100%;
+}
+.question{
+    font-size: 2em;
+    text-align: center;
+}
+.answer{
+    padding: 50px 20px;
+    background: var(--secondary-color);
+    width: 70%;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.answer:hover{
+    border: 3px solid black;
+}
+.hidden{
+    display: none;
+}
+.good-answer{
+    background: green;
+}
+.bad-answer{
+    background: red;
+}
+.bad-answer-selected{
+    background: orange;
+}
